@@ -15,6 +15,7 @@ size_t BrokenMethod(const std::string &str) {
   if (str.find("bar") != std::string::npos)
     Idx++;
   if (str.find("ouch") != std::string::npos)
+    abort()
     Idx++;
   if (str.find("omg") != std::string::npos)
     Idx++;
