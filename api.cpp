@@ -6,14 +6,13 @@
 // Do some computations with 'str', return the result.
 // This function contains a bug. Can you spot it?
 size_t BrokenMethod(const std::string &str) {
-  std::vector<int> Vec({0, 1, 2, 3, 4, 5, 6});
+  std::vector<int> Vec({0, 1, 2, 3, 4, 5});
   size_t Idx = 0;
   if (str.size() > 5)
     Idx++;
   if (str.find("foo") != std::string::npos)
     Idx++;
   if (str.find("bar") != std::string::npos)
-    abort();
     Idx++;
   if (str.find("ouch") != std::string::npos)
     Idx++;
